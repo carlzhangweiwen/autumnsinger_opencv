@@ -70,3 +70,6 @@ android project to use opencv
  闭操作（ Closing ）
  
  形态学梯度（ Morphological Gradient ）
+ 
+ 
+ com.autumnsinger.opencv.util.PictureUtils 这个类是主要的运算类，所有的图像算法都在这里
