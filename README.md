@@ -3,8 +3,8 @@ android project to use opencv
 
 
 ##直方图
--直方图计算（ Histogram Calculation ）
--直方图均衡化（ Histogram Equalization ）
+-**直方图计算（ Histogram Calculation ）
+-**直方图均衡化（ Histogram Equalization ）
 
 
 ##代数操作
