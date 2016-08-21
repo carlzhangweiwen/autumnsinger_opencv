@@ -10,9 +10,13 @@ android project to use opencv
 
 ##代数操作
 图像加运算（ Operation Add ）
+
  图像减运算（ Operation Subtract ）
+ 
  图像乘运算（ Operation Multiply ）
+ 
  图像除运算（ Operation Divide ）
+ 
 
 ##几何操作
  平移（ Pic Translate ）
