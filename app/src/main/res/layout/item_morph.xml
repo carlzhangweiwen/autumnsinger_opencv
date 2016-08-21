@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/morphLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Morphology Operations Type："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioGroup android:id="@+id/morph_type_group"   android:contentDescription="threshold_type" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top">
+            <RadioButton android:id="@+id/morph_type_zero" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Dilation" android:checked="true"></RadioButton>
+            <RadioButton android:id="@+id/morph_type_one" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Erosion"></RadioButton>
+            <RadioButton android:id="@+id/morph_type_two" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Opening"></RadioButton>
+            <RadioButton android:id="@+id/morph_type_three" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Closing"></RadioButton>
+            <RadioButton android:id="@+id/morph_type_four" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Morphological Gradient"></RadioButton>
+        </RadioGroup>
+        <TextView
+            android:text="Operation Element："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioGroup android:id="@+id/morph_ele_type_group"   android:contentDescription="morph_ele_type_group" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="">
+            <RadioButton android:id="@+id/morph_ele_type_zero" android:layout_width="100dp" android:layout_height="wrap_content"  android:text="Rect" android:checked="true"></RadioButton>
+            <RadioButton android:id="@+id/morph_ele_type_one" android:layout_width="100dp" android:layout_height="wrap_content"  android:text="Cross"></RadioButton>
+            <RadioButton android:id="@+id/morph_ele_type_two" android:layout_width="100dp" android:layout_height="wrap_content"  android:text="Ellipse"></RadioButton>
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/morphText"
+                android:text="Element Size:1"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                />
+
+            <SeekBar
+                android:layout_width="210dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/morphBar"
+                android:max="10"
+                android:longClickable="true"
+                android:progress="1"
+                android:minHeight="30.0dip"
+                android:thumbOffset="5.0dip"
+                android:progressDrawable="@drawable/playback_seekbar_style"
+                android:thumb="@drawable/playback_seekbar_thumb" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/binaryLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Binary Type："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioGroup android:id="@+id/threshold_type_group"   android:contentDescription="threshold_type" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top">
+            <RadioButton android:id="@+id/threshold_type_zero" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Binary" android:checked="true"></RadioButton>
+            <RadioButton android:id="@+id/threshold_type_one" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Binary Inverted"></RadioButton>
+            <RadioButton android:id="@+id/threshold_type_two" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Threshold Truncated"></RadioButton>
+            <RadioButton android:id="@+id/threshold_type_three" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Threshold to Zero"></RadioButton>
+            <RadioButton android:id="@+id/threshold_type_four" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="Threshold to Zero Inverted"></RadioButton>
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/minValueText"
+                android:text="@string/binary_minvalue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                />
+
+            <SeekBar
+                android:layout_width="210dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/minValue"
+                android:max="255"
+                android:longClickable="true"
+                android:progress="100"
+                android:minHeight="30.0dip"
+                android:thumbOffset="5.0dip"
+                android:progressDrawable="@drawable/playback_seekbar_style"
+                android:thumb="@drawable/playback_seekbar_thumb" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/maxValueText"
+                android:text="@string/binary_maxvalue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                />
+            <SeekBar
+                android:layout_width="210dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/maxValue"
+                android:max="255"
+                android:progress="255"
+                android:minHeight="30.0dip"
+                android:thumbOffset="5.0dip"
+                android:progressDrawable="@drawable/playback_seekbar_style"
+                android:thumb="@drawable/playback_seekbar_thumb" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

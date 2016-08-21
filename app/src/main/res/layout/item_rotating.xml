@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/rotatingLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ratatingText"
+                android:text="Rotating Angle:90"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                />
+
+            <SeekBar
+                android:layout_width="210dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/rotatingBar"
+                android:max="360"
+                android:longClickable="true"
+                android:progress="90"
+                android:minHeight="30.0dip"
+                android:thumbOffset="5.0dip"
+                android:progressDrawable="@drawable/playback_seekbar_style"
+                android:thumb="@drawable/playback_seekbar_thumb" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
