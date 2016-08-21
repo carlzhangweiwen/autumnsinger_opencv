@@ -20,8 +20,11 @@ android project to use opencv
 
 ##几何操作
  平移（ Pic Translate ）
+ 
  缩放（ Pic Scaling ）
+ 
  旋转（ Pic Rotating ）
+ 
 
 
 ##平滑边缘去噪声
@@ -32,16 +35,24 @@ android project to use opencv
 
 ##边缘检测
  Roberts（ Edge Detection Roberts ）
+ 
  Prewitt（ Edge Detection Prewitt ）
+ 
  Sobel（ Edge Detection Sobel ）
+ 
  Canny（ Edge Detection Canny ）
+ 
 
 
 ##二值图
  二值化（ To binaryImage ）
+ 
  Otsu二值化(To binaryImage by Otsu)
+ 
  距离变换（ Distance Transform ）
+ 
  骨架（ Skeleton ）
+ 
  重构（Reconstruction ）
 
 
@@ -51,7 +62,11 @@ android project to use opencv
 
 ##形态学操作（ Morphology Operation ）
  膨胀（ Dilation ）
+ 
  腐蚀（ Erosion ）
+ 
  开操作（ Opening ）
+ 
  闭操作（ Closing ）
+ 
  形态学梯度（ Morphological Gradient ）
